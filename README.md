@@ -70,6 +70,13 @@ Model weight files are stored in the `main/trained_models/` folder. The default 
 
 ### Training the Model
 
+If the installed torch is CPU verison, install a GPU version to use Cuda:
+
+```bash
+pip uninstall torch
+pip install torch==2.0.0+cu118 -f https://download.pytorch.org/whl/torch --proxy http://127.0.0.1:10809
+```
+
 If you want to train your own model, you can run `train.py` in the `main/` folder.
 
 ```bash
