@@ -33,6 +33,8 @@ conda activate StreetFighterAI
 cd [parent_directory_of_project]/street-fighter-ai/main
 pip install -r requirements.txt
 
+if failed, try: pip install -r requirements.txt --trusted-host pypi.org --trusted-host files.pythonhosted.org --proxy http://127.0.0.1:10809
+
 # Run script to locate gym-retro game folder
 cd ..
 python .\utils\print_game_lib_folder.py
